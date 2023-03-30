@@ -29,12 +29,39 @@ public class BitValueStudy {
         System.out.printf("%d ^ %d = %d", op1, op2, result);
     }
 
-    public static void main(String[] args) {
-        BitValueStudy bitValueStudy = new BitValueStudy();
-        //bitValueStudy.studyAnd();
-        //bitValueStudy.studyOr();
-        bitValueStudy.studyXor();
+    void studyNot() {
+        byte value = (byte)0b11110101;
+        byte value2 = (byte)~value;
 
+        System.out.printf("~%d = %02X", value, value2);
+    }
+
+    void studyLeftShift() {
+        byte value = 64;
+        byte result;
+        int count = 1;
+
+        result = (byte)(value << count);
+
+        System.out.printf("%02X << %d = %02x\n", value, count, result);
+    }
+
+    void studyRightShift() {
+        byte value = -128;
+        int count = 1;
+
+        System.out.printf("%02X >> %d = %02x\n", value, count, value >> count);
+        System.out.printf("%02X >>> %d = %02x\n", value, count, value >>> count);
+    }
+
+    public static void main(String[] args) {
+        BitValueStudy study = new BitValueStudy();
+        //study.studyAnd();
+        //study.studyOr();
+        //study.studyXor();
+        //study.studyNot();
+        //study.studyLeftShift();
+        //study.studyRightShift();
 
     }
 
