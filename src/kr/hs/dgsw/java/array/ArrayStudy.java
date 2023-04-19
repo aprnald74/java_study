@@ -42,16 +42,10 @@ public class ArrayStudy {
         }
         intArray[6] = 12;
         intArray[-1] = 3;
-
-
-
-
     }
     public static void main(String[] args) {
         ArrayStudy arrayStudy = new ArrayStudy();
         //arrayStudy.study();
         arrayStudy.studyInit();
     }
-
-
 }
