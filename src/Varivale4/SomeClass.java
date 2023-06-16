@@ -1,7 +1,5 @@
 package Varivale4;
 
-import kr.hs.dgsw.java.string.StringEquals;
-
 public class SomeClass {
 
     String name;
